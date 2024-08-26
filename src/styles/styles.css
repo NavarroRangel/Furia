@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root{
+    --bg-color--darkMode: #060505;
+    --bg-color--whiteMode: #fff;
+    --nav-letter-color-whiteMode: #fff;
+    --nav-letter-color-darkMode: #060505;
+    --letters-color-whiteMode: #060505;
+    --letters-color-darkMode: #fff;
+
+}
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    box-sizing: border-box;
+    }
+
+    .navigation a{
+        text-decoration: none;
+        padding-right: 32px;
+        color: var(--nav-letter-color-darkMode);
+    }
+
+
+#logo{
+    position: absolute;
+    width: 150px;
+    margin-top: 42px;
+    z-index: 1;
+    margin-left: 76px;;
+}
+
+    
+header{
+    display: flex;
+    position: relative;
+    background-color: var(--nav-letter-color-whiteMode);
+    align-items: last baseline;
+    padding-bottom: 1%;
+    justify-content: flex-end;
+    height: 12vh;
+
+    
+}
+
+.navigation{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    width: 100%;
+    font-size: 26px;
+    margin-left: 37%;
+    
+}
+
+#sun{
+    margin-top: 80px;
+    width: 48px;
+    margin-right: 100px
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color--darkMode) ;
+    align-items: center;
+    height:  80vh;
+    overflow: hidden;
+
+} 
+article div{
+    margin: 0 69px;
+}
+.principalText{
+    color: var(--letters-color-darkMode);
+}
+
+.image-furiaJogadores {
+    object-fit: cover;
+    -webkit-mask-image: radial-gradient(circle, black 20%, transparent 95%);
+    mask-image: radial-gradient(circle, black 45%, transparent 95%);
+}
+.text{
+    margin-bottom: 90px;
+    width: 100%;
+
+}
+#title{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+#textFuria{
+    font-size: 24px;
+    text-align: center;
+}
