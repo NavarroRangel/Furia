@@ -114,6 +114,7 @@ article div{
 
 }
 #title{
+    margin-top: 100px;
     text-align: center;
     font-size: 150px;
     margin-bottom: 50px;
@@ -335,8 +336,8 @@ footer {
         display: block;
         color: #060505; /* Mostrar o ícone do menu hamburguer */
     }
-    header{
-        margin-bottom: 100px;
+    #title{
+       font-size: 50px;
     }
 
     .navigation a {
@@ -346,7 +347,18 @@ footer {
         text-decoration: none;
         display: block;
     }
+    #home{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+
+    }
+    #textFuria{
+        font-size: 20px;
+    }
+
 }
+
 
 /* Mostrar o menu quando o ícone do menu hamburguer for clicado */
 .show {
