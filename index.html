@@ -6,24 +6,28 @@
     <title>Furia-CS</title>
     <link rel="stylesheet" href="./src/styles/styles.css"/>
     <link rel="icon" href="./src/images/favico.png" type="image/x-icon"/>
+    
 </head>
 <body>
     <img id="logo" src="./src/images/png furia.png" alt="Logo Furia">
     <header>
-        <div class="navigation">
+        <div class="hamburger" id="hamburger">
+            ☰
+          </div>
+        <nav class="navigation">
             <a href="#home">HOME</a>
             <a href="#lineup">LINE-UP</a>
             <a href="#agenda">AGENDA</a>
-            <a href="#resultado">RESULTADOS</a>
-        </div>
+            <a href="#resultado">RESULTADOS</a>       
+        </nav>
         <div id="mode">
             <a><img id="sun" class="colorMode" src="./src/images/Sun.png" alt="Modo Claro"></a>
         </div>
     </header>
-    
     <article id="home">
         <div class="text">
-            <h1 id="title" class="principalText">ISSO É FURIA</h1>
+            <h1 id="title" class="principalText"
+            >ISSO É FURIA</h1>
             <p id="textFuria" class="principalText">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 A cum doloribus totam voluptatum doloremque tempore iste reiciendis quia quaerat quibusdam illo, sunt, 
@@ -39,7 +43,6 @@
         <div class="lineup">
             <a id="lineup" class="title-lineup">Line-UP Principal</a>
         </div>
-
         <div class="playerContainer">
             <div class="playerphoto">
                 <img src="src/images/skulz.png" width="200px">
@@ -66,7 +69,7 @@
                 <span class="nickname"><img class="flag" src="https://static.draft5.gg/assets/flags/BR.svg">yuurih</span>
             </div>
 
-        </div>
+    </div>
 
         <div class="lineup linefem">
             <a class="title-lineup linefem">Line-UP Feminina</a>
@@ -252,7 +255,10 @@
         <div class="footer-bottom">
             &copy; 2024 Furia. Todos os direitos reservados.
         </div>
+
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/5bb77abed3.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="./src/index.js"></script>
 </html>

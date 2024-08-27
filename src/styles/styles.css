@@ -11,8 +11,13 @@
     --letters-color-darkMode: #fff;
 
 }
+.hidden{
+    visibility: hidden;
+}
 body{
+    scroll-behavior: smooth;
     background-color: var(--bg-color--darkMode);
+    overflow-x: hidden;
 }
 
 * {
@@ -25,6 +30,7 @@ body{
     }
 
     .navigation a{
+        cursor: url('../images/favico.png'),auto;
         text-decoration: none;
         padding-right: 32px;
         color: var(--nav-letter-color-darkMode);
@@ -34,11 +40,12 @@ body{
 }
 
 #logo{
-    position: fixed;
+    position: absolute;
     width: 150px;
     margin-top: 42px;
     z-index: 1000;
-    margin-left: 76px;;
+    margin-left: 76px;
+    opacity: 0;
 }
 
     
@@ -85,6 +92,7 @@ article div{
 }
 .principalText{
     color: var(--letters-color-darkMode);
+    opacity: 0;
 }
 
 .image-furiaJogadores {
@@ -92,6 +100,7 @@ article div{
     object-fit: cover;
     -webkit-mask-image: radial-gradient(circle, black 20%, transparent 95%);
     mask-image: radial-gradient(circle, black 45%, transparent 95%);
+    opacity: 0;
 }
 .text{
     margin-bottom: 90px;
@@ -119,6 +128,8 @@ article div{
 }
 
 
+
+
 .playerContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -130,9 +141,13 @@ article div{
     margin-top: 20px;
 }
 
+
   .playerphoto{
+    position: relative;
     border: 1px solid black;
     justify-items: center;
+    opacity: 0;
+    transform: translateX(100vw);
   }
 
 span{
@@ -277,4 +292,57 @@ footer {
     border-top: 1px solid #444;
     padding-top: 10px;
     font-size: 14px;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #logo{
+        width: 90px;
+    }
+    .navigation {
+        display: none; /* Esconder o menu de navegação padrão */
+        flex-direction: column;
+        background-color: #060505;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 110px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+        z-index: 10;
+        width: 200px;
+    }
+
+    .hamburger {
+        display: block;
+        color: #060505; /* Mostrar o ícone do menu hamburguer */
+    }
+    header{
+        margin-bottom: 100px;
+    }
+
+    .navigation a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+/* Mostrar o menu quando o ícone do menu hamburguer for clicado */
+.show {
+    display: flex;
+}
+#sun{
+    margin-left: 5vw;
+    width: 30px;
 }
