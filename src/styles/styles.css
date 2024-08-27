@@ -125,8 +125,10 @@ article div{
 .lineup{
     text-align: center;
     margin-bottom: 60px;
+    font-family: "New Amsterdam", sans-serif;
 }
 .title-lineup{
+    font-family: "New Amsterdam", sans-serif;
     text-align: center;;
     color: var(--letters-color-darkMode);
     font-size: 48px;
@@ -175,6 +177,7 @@ span{
     margin: 20px;
 }
 .containerNextGames{
+    font-family: "New Amsterdam", sans-serif;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -192,6 +195,7 @@ span{
     padding: 20px;
     width: 580px;
 }
+#resultado{    font-family: "New Amsterdam", sans-serif;}
 
 .logotimesConfronto{
     width: 120px;
